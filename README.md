@@ -5,6 +5,7 @@
 Go to the LibreNMS root directory and run the following command as the librenms user.
 
     ./lnms plugin:add dmbokhan/vlans-compare
+    php artisan route:clear
 
 ## Usage
 Head to the web browser and go to **Overview** - **Plugins** - **Vlans Compare**. There are multiple-option select fields where you can choose your devices or ports (using Ctrl + Click) to see differences between their vlans on the plugin page.
