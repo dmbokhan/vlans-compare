@@ -27,6 +27,7 @@ class VlansCompareServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/vlans-compare.php');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'vlans-compare');
+        $this->publishes([__DIR__.'/../resources/assets' => public_path('dmbokhan/vlans-compare'),], 'public');
 
         $name = 'vlans-compare';
         $manager->publishHook($name,MenuEntryHook::class, MenuHook::class);
