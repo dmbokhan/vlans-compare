@@ -1,1 +1,1 @@
-<a href="/plugins/vlans-compare"><i class="fa fa-stream fa-fw fa-lg" aria-hidden="true"></i> Vlans Compare</a>
+<a href="{{ route('vlans-compare.index') }}"><i class="fa fa-stream fa-fw fa-lg" aria-hidden="true"></i> vlans-compare</a>
