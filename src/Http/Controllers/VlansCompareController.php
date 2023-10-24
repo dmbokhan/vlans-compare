@@ -93,7 +93,7 @@ class VlansCompareController extends Controller
     {
         $devices_port_data = array();  // Gather devices ports data from DB
         foreach ($_POST['devices'] as $device_id) {
-            $device_ports_object = Port::where('device_id', $device_id)->get(['port_id','ifName']);
+            $device_ports_object = Port::where('device_id', $device_id)->orderBy("ifName")->get(['port_id','ifName']);
             $ports_list = [];
             foreach ($device_ports_object as $value) {
                 $ports_list[$value['port_id']] = $value['ifName'];
