@@ -13,4 +13,4 @@ Head to the web browser and go to **Overview** - **Plugins** - **Vlans Compare**
 
 ![image1](https://i.imgur.com/i8vluto.png)
 
-![image2](https://i.imgur.com/5SYyOa3.png)
+![image2](https://i.imgur.com/FemzJIO.png)
