@@ -6,5 +6,5 @@ use App\Plugins\Hooks\MenuEntryHook;
 
 class MenuHook extends MenuEntryHook
 {
-    public $view = 'vlans-compare::menu.main';
+    public string $view = 'vlans-compare::menu.main';
 }
