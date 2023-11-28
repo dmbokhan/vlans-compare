@@ -45,7 +45,8 @@ class VlansCompareController extends Controller
             $result = [];
             foreach ($devices_vlan_data as $device_id => $vlans) {
                 $device = Device::where('device_id', $device_id) -> first();
-                $result[$device['hostname']] = array_diff($all_vlans,$vlans);
+                $diff_with_only_int_type_vlans = array_filter(array_diff($all_vlans,$vlans), 'is_int');
+                $result[$device['hostname']] = $diff_with_only_int_type_vlans;
             }
 
             $response = view('vlans-compare::compare_by_devices', [
